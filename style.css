@@ -50,7 +50,7 @@
 .toggle {
   position: fixed;
   top: 30px;
-  right: 30px;
+  right: 60px;
   width: 60px;
   height: 60px;
   background: url(images/menu.png);
