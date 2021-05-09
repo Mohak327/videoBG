@@ -27,7 +27,7 @@
 }
 
 .showcase.active{
-  right: 300px;
+  right: 100%;
 }
 
 .showcase header {
@@ -81,6 +81,8 @@
 .text {
   position: relative;
   z-index: 10;
+  width: 100%;
+  padding: 40px 100px;
 }
 
 .text h2 {
@@ -160,26 +162,28 @@
 .menu{
   position: absolute;
   top: 0;
-  right: 0;
-  width: 300px;
+  left: 0;
+  width: 100vw;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
-.menu ul{
+.menu > .list-items ul{
   position: relative;
   list-style: none;
+  left: 0;
+  padding-left: 40px;
 }
 
-.menu ul li a{
+.menu > .list-items ul li a{
   text-decoration: none;
-  font-size: 24px ;
+  font-size: 32px ;
   color: #111;
 }
 
-.menu ul li a:hover{
+.menu > .list-items ul li a:hover{
   color: var(--overlay-color);
 }
 
@@ -187,6 +191,10 @@
   .showcase,
   .showcase header{
     padding: 40px;
+  }
+
+  .text {
+    padding-left: 0px;
   }
 
   .text h2{
